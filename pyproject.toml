@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "p3p_ambiguity"
+version = "0.1.0"
+description = "Educational repo oriented to illustrating ambiguity in the P3P problem"
+authors = ["Iñaki Rabanillo <lanza241@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = {version = "1.26", python = "<3.13,>=3.9"}
+pre-commit = "^3.7.1"
+mypy = "^1.10.0"
+pyrr = "^0.10.3"
+manim = {version = "0.18.1", python = "<3.13,>=3.9"}
+typer = "^0.15.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
